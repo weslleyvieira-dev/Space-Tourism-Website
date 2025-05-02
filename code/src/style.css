@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "Bellefair";
+  src: url("../public/assets/fonts/Bellefair-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Condensed";
+  src: url("../public/assets/fonts/BarlowCondensed-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Condensed Bold";
+  src: url("../public/assets/fonts/BarlowCondensed-Bold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Barlow Regular";
+  src: url("../public/assets/fonts/Barlow-Regular.ttf") format("truetype");
+}
+
+* {
+  font-family: "Bellefair", "Barlow Condensed", "Barlow Regular", sans-serif;
+  font-size: 1rem;
+}
+
+:root {
+  --blue-900: #0b0d17;
+  --blue-300: #d0d6f9;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.text-preset-1,
+.text-preset-2,
+.text-preset-3,
+.text-preset-4,
+.text-preset-6 {
+  font-family: "Bellefair";
+  font-weight: normal;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: white;
+  margin: 0;
+}
+
+.text-preset-1 {
+  font-size: 9rem;
+}
+.text-preset-2 {
+  font-size: 6.25rem;
+}
+.text-preset-3 {
+  font-size: 3.5rem;
+}
+.text-preset-4 {
+  font-size: 2rem;
+}
+.text-preset-6 {
+  font-size: 1.75rem;
+}
+
+.text-preset-5,
+.text-preset-7,
+.text-preset-8 {
+  font-family: "Barlow Condensed";
+  font-weight: normal;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.text-preset-5 {
+  font-size: 1.75rem;
+  letter-spacing: 4px;
+  color: var(--blue-300);
+}
+.text-preset-7 {
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  color: white;
+}
+.text-preset-8 {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.text-preset-9 {
+  font-family: "Barlow Regular";
+  font-size: 1.125rem;
+  font-weight: normal;
+  line-height: 180%;
+  letter-spacing: 0;
+  color: white;
+  margin: 0;
+}
+
+@media (max-width: 1023px) {
+  html,
+  body {
+    width: 100dvw;
+    height: 100dvh;
+  }
+}
