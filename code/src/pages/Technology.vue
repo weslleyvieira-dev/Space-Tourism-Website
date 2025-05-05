@@ -73,6 +73,8 @@ main {
   height: 100vh;
   resize: none;
   box-sizing: border-box;
+  overflow-y: overlay;
+  overflow-x: hidden;
 }
 
 .tech-container {
@@ -154,21 +156,18 @@ main {
   border: none;
   border-radius: 50%;
   transition: border-color 1s ease;
-}
-
-.pagination-techs .pagination-options {
   opacity: 1;
   margin-bottom: 0;
   background-color: transparent;
   border: 1px solid rgb(255, 255, 255, 0.25);
 }
 
-.pagination-techs .pagination-options:hover {
+.pagination-options:hover {
   border: 1px solid rgb(255, 255, 255, 1);
   cursor: pointer;
 }
 
-.pagination-techs .active .pagination-options {
+.active .pagination-options {
   background-color: white;
   color: var(--blue-900);
 }
@@ -191,5 +190,125 @@ main {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding-top: 6rem;
+  }
+
+  .tech-container {
+    padding: 2.5rem;
+    width: 100%;
+  }
+
+  .text-preset-5 {
+    font-size: 1.25rem;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+  }
+
+  .content picture {
+    align-items: center;
+  }
+
+  .tech-image {
+    width: 100dvw;
+    height: 100%;
+    margin-top: 4rem;
+    object-fit: cover;
+  }
+
+  .content-explanation {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .pagination {
+    margin: 2rem 0 0;
+  }
+
+  .pagination-techs {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .pagination-options {
+    font-size: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  .explanation {
+    text-align: center;
+    margin: 0 5.5rem;
+  }
+
+  .explanation .text-preset-4 {
+    font-size: 1.5rem;
+  }
+
+  .explanation .text-preset-3 {
+    font-size: 2.5rem;
+  }
+
+  .explanation .text-preset-9 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    width: 95%;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    height: auto;
+    padding-top: 5.5rem;
+  }
+
+  .tech-container {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .text-preset-5 {
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    text-align: center;
+  }
+
+  .tech-image {
+    height: 16.125rem;
+  }
+
+  .pagination {
+    margin: 0;
+  }
+
+  .pagination-options {
+    font-size: 1.125rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .explanation {
+    margin: 0;
+  }
+
+  .explanation .text-preset-4 {
+    font-size: 1.125rem;
+  }
+
+  .explanation .text-preset-3 {
+    font-size: 1.5rem;
+  }
+
+  .explanation .text-preset-9 {
+    font-size: 0.938rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
 }
 </style>

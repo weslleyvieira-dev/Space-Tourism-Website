@@ -49,9 +49,9 @@ onMounted(() => {
       alt="Loading"
     />
   </div>
-  <div v-else class="app-background">
+  <div v-else class="app-view">
     <picture>
-      <source media="(min-width: 1024px)" :srcset="currentBackground.desktop" />
+      <source media="(min-width: 1025px)" :srcset="currentBackground.desktop" />
       <source media="(max-width: 1024px)" :srcset="currentBackground.tablet" />
       <source media="(max-width: 767px)" :srcset="currentBackground.mobile" />
       <transition name="bg-fade" mode="out-in">
@@ -73,7 +73,7 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.app-background {
+.app-view {
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -86,6 +86,9 @@ onMounted(() => {
   object-fit: cover;
   position: absolute;
   z-index: -1;
+  background-color: var(--blue-900);
+  background-size: cover;
+  background-position: center;
 }
 
 .bg-fade-enter-active,

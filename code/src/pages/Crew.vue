@@ -69,6 +69,8 @@ main {
   height: 100vh;
   resize: none;
   box-sizing: border-box;
+  overflow-y: overlay;
+  overflow-x: hidden;
 }
 
 .crew-container {
@@ -182,5 +184,101 @@ main {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding-top: 6rem;
+  }
+
+  .crew-container {
+    padding: 2.5rem;
+    width: 100%;
+  }
+
+  .text-preset-5 {
+    font-size: 1.25rem;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content-explanation {
+    text-align: center;
+    padding: 2.5rem 5.5rem 0;
+  }
+
+  .text-preset-4 {
+    font-size: 1.5rem;
+  }
+
+  .text-preset-3 {
+    font-size: 2.5rem;
+  }
+
+  .text-preset-9 {
+    font-size: 1rem;
+  }
+
+  .pagination {
+    align-self: center;
+    margin: 2.5rem 0 2rem;
+  }
+
+  .crew-image {
+    height: 35rem;
+  }
+
+  .crew-members {
+    gap: 1rem;
+  }
+
+  .crew-members li {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    padding-top: 5.5rem;
+  }
+
+  .crew-container {
+    padding: 1.5rem;
+  }
+
+  .text-preset-5 {
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    text-align: center;
+  }
+
+  .content-explanation {
+    width: 100%;
+    padding: 2.5rem 0 0;
+  }
+
+  .text-preset-4 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .text-preset-3 {
+    font-size: 1.5rem;
+  }
+
+  .text-preset-9 {
+    font-size: 0.94rem;
+  }
+
+  .pagination {
+    margin: 3.5rem 0 0;
+  }
+
+  .crew-image {
+    height: 21.25rem;
+  }
 }
 </style>

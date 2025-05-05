@@ -16,10 +16,7 @@ function toggleMenu() {
     <nav class="navbar">
       <div class="logo">
         <template v-if="route.name === 'Home'">
-          <img
-            src="/assets/shared/logo.svg"
-            alt="Space Tourism Website Logo"
-          />
+          <img src="/assets/shared/logo.svg" alt="Space Tourism Website Logo" />
         </template>
         <template v-else>
           <router-link to="/" class="nav-link">
@@ -32,10 +29,7 @@ function toggleMenu() {
         <div class="line"></div>
       </div>
       <div class="menu-icon" @click="toggleMenu">
-        <img
-          src="/assets/shared/icon-hamburger.svg"
-          alt="Menu Icon"
-        />
+        <img src="/assets/shared/icon-hamburger.svg" alt="Menu Icon" />
       </div>
       <div class="pages" :class="{ 'menu-open': isMenuOpen }">
         <ul class="nav-links" :class="{ 'menu-open': isMenuOpen }">
@@ -46,9 +40,9 @@ function toggleMenu() {
             class="close-icon"
           />
           <router-link to="/" v-on:click="toggleMenu" class="nav-link">
-            <li :class="{ active: route.name === 'Home' }">
+            <li class="li-home" :class="{ active: route.name === 'Home' }">
               <p class="text-preset-8">
-                <strong class="text-preset-8">00</strong> HOME
+                <strong class="text-preset-8">00 </strong>HOME
               </p>
             </li>
           </router-link>
@@ -122,7 +116,8 @@ function toggleMenu() {
   height: 3rem;
 }
 
-.menu-icon, .close-icon {
+.menu-icon,
+.close-icon {
   display: none;
   background: none;
   border: none;
@@ -130,7 +125,8 @@ function toggleMenu() {
   z-index: 3;
 }
 
-.menu-icon img, .close-icon img {
+.menu-icon img,
+.close-icon img {
   width: 1.5rem;
   height: 1.5rem;
 }
@@ -199,9 +195,9 @@ function toggleMenu() {
   padding-right: 0.75rem;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .navbar {
-    top: 0;
+    margin-top: 0;
   }
 
   .logo {
@@ -227,6 +223,10 @@ function toggleMenu() {
 
   .nav-links li p strong {
     padding-right: 0.5rem;
+  }
+
+  .li-home.active p strong {
+    display: none;
   }
 }
 
@@ -304,6 +304,10 @@ function toggleMenu() {
 
   .nav-links li.active {
     border-right-color: white;
+  }
+
+  .li-home.active p strong {
+    display: contents;
   }
 }
 </style>

@@ -37,6 +37,8 @@ main {
   height: 100vh;
   resize: none;
   box-sizing: border-box;
+  overflow-y: overlay;
+  overflow-x: hidden;
 }
 
 .hero-container {
@@ -81,7 +83,6 @@ button {
   height: 17rem;
   border-radius: 50%;
   transition: box-shadow 0.4s ease, color 0.4s ease;
-  z-index: 1;
 }
 
 button:hover {
@@ -95,5 +96,72 @@ button:hover {
 
 .text-preset-4:hover {
   color: rgb(11, 13, 23, 0.5);
+}
+
+@media (max-width: 1024px) {
+  main {
+    height: auto;
+    padding: 14rem 2.5rem 8rem;
+  }
+
+  .hero-container {
+    height: auto;
+    align-items: center;
+    padding: 0 5.5rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .texts {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-preset-9 {
+    font-size: 1rem;
+  }
+
+  .button-container {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    padding: 7rem 1.5rem 1.5rem;
+  }
+
+  .hero {
+    gap: 0;
+  }
+
+  .text-preset-5 {
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .text-preset-1 {
+    font-size: 5rem;
+  }
+
+  .text-preset-9 {
+    font-size: 0.938rem;
+  }
+
+  .button-container {
+    padding: 7.4rem 5.7rem;
+  }
+
+  button {
+    height: 9rem;
+    width: 9rem;
+  }
+
+  .text-preset-4 {
+    font-size: 1.125rem;
+  }
 }
 </style>

@@ -80,6 +80,8 @@ main {
   height: 100vh;
   resize: none;
   box-sizing: border-box;
+  overflow-y: overlay;
+  overflow-x: hidden;
 }
 
 .content-container {
@@ -210,5 +212,107 @@ main {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding-top: 6rem;
+  }
+
+  .content-container {
+    padding: 2.5rem;
+    width: 100%;
+  }
+
+  .text-preset-5 {
+    font-size: 1.25rem;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content picture img {
+    width: 18.75rem;
+    height: 18.75rem;
+    margin: 2.625rem;
+  }
+
+  .content-explanation {
+    padding: 0.7rem 5.4rem;
+  }
+
+  .destination-tabs {
+    justify-content: center;
+  }
+
+  .text-preset-2 {
+    font-size: 5rem;
+    text-align: center;
+  }
+
+  .text-preset-9 {
+    font-size: 1rem;
+    text-align: center;
+    color: var(--blue-300);
+  }
+
+  .line {
+    margin: 1.5rem 0;
+  }
+
+  .distance,
+  .travel-time {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    padding-top: 5.5rem;
+  }
+
+  .content-container {
+    padding: 1.5rem;
+  }
+
+  .text-preset-5 {
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    text-align: center;
+  }
+
+  .content {
+    width: auto;
+    height: auto;
+  }
+
+  .content picture img {
+    width: 9.375rem;
+    height: 9.375rem;
+    margin: 1.656rem;
+  }
+
+  .content-explanation {
+    width: 100%;
+    padding: 0;
+  }
+
+  .destination-tabs {
+    margin: 0 0 1.5rem;
+  }
+
+  .text-preset-2 {
+    font-size: 3.5rem;
+  }
+
+  .text-preset-9 {
+    font-size: 0.938rem;
+  }
+
+  .statistics {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
 </style>
