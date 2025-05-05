@@ -15,10 +15,14 @@ Users should be able to:
 
 ![PC](Screenshot%20-%20PC.png)
 
-<!-- ### Links
+- Mobile
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+![Mobile](Screenshot%20-%20Mobile.png)
+
+### Links
+
+- Solution URL: [GitHub](https://github.com/weslleyvieira-dev/Space-Tourism-Website)
+- Live Site URL: [Vercel](https://space-tourism-website-eight-xi.vercel.app/)
 
 ### Built with
 
