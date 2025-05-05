@@ -13,25 +13,6 @@ function selectMember(index) {
 </script>
 
 <template>
-  <picture class="bg-image">
-    <source
-      media="(min-width: 1024px)"
-      srcset="../../public/assets/crew/background-crew-desktop.jpg"
-    />
-    <source
-      media="(max-width: 1024px)"
-      srcset="../../public/assets/crew/background-crew-tablet.jpg"
-    />
-    <source
-      media="(max-width: 767px)"
-      srcset="../../public/assets/crew/background-crew-mobile.jpg"
-    />
-    <img
-      src="../../public/assets/crew/background-crew-mobile.jpg"
-      class="bg-image"
-      alt="Background Image"
-    />
-  </picture>
   <main>
     <div class="crew-container">
       <p class="text-preset-5">
@@ -80,14 +61,6 @@ function selectMember(index) {
 </template>
 
 <style scoped>
-.bg-image {
-  width: 100dvw;
-  height: 100dvh;
-  object-fit: cover;
-  position: absolute;
-  z-index: -1;
-}
-
 main {
   display: flex;
   justify-content: center;

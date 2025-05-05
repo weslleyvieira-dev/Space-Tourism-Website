@@ -1,23 +1,23 @@
 @font-face {
   font-family: "Bellefair";
-  src: url("../public/assets/fonts/Bellefair-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/Bellefair-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Barlow Condensed";
-  src: url("../public/assets/fonts/BarlowCondensed-Regular.ttf")
+  src: url("/assets/fonts/BarlowCondensed-Regular.ttf")
     format("truetype");
 }
 
 @font-face {
   font-family: "Barlow Condensed Bold";
-  src: url("../public/assets/fonts/BarlowCondensed-Bold.ttf")
+  src: url("/assets/fonts/BarlowCondensed-Bold.ttf")
     format("truetype");
 }
 
 @font-face {
   font-family: "Barlow Regular";
-  src: url("../public/assets/fonts/Barlow-Regular.ttf") format("truetype");
+  src: url("/assets/fonts/Barlow-Regular.ttf") format("truetype");
 }
 
 * {

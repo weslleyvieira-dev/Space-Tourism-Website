@@ -5,25 +5,6 @@ const route = useRoute();
 </script>
 
 <template>
-  <picture class="bg-image">
-    <source
-      media="(min-width: 1024px)"
-      srcset="../../public/assets/home/background-home-desktop.jpg"
-    />
-    <source
-      media="(max-width: 1024px)"
-      srcset="../../public/assets/home/background-home-tablet.jpg"
-    />
-    <source
-      media="(max-width: 767px)"
-      srcset="../../public/assets/home/background-home-mobile.jpg"
-    />
-    <img
-      src="../../public/assets/home/background-home-mobile.jpg"
-      class="bg-image"
-      alt="Background Image"
-    />
-  </picture>
   <main>
     <div class="hero-container">
       <div class="hero">
@@ -48,14 +29,6 @@ const route = useRoute();
 </template>
 
 <style scoped>
-.bg-image {
-  width: 100dvw;
-  height: 100dvh;
-  object-fit: cover;
-  position: absolute;
-  z-index: -1;
-}
-
 main {
   display: flex;
   justify-content: center;

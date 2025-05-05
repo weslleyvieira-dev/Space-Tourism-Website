@@ -13,27 +13,6 @@ function selectDestination(index) {
 </script>
 
 <template>
-  <picture class="bg-image">
-    <source
-      media="(min-width: 1024px)"
-      srcset="
-        ../../public/assets/destination/background-destination-desktop.jpg
-      "
-    />
-    <source
-      media="(max-width: 1024px)"
-      srcset="../../public/assets/destination/background-destination-tablet.jpg"
-    />
-    <source
-      media="(max-width: 767px)"
-      srcset="../../public/assets/destination/background-destination-mobile.jpg"
-    />
-    <img
-      src="../../public/assets/destination/background-destination-mobile.jpg"
-      class="bg-image"
-      alt="Background Image"
-    />
-  </picture>
   <main>
     <div class="content-container">
       <p class="text-preset-5">
@@ -93,14 +72,6 @@ function selectDestination(index) {
 </template>
 
 <style scoped>
-.bg-image {
-  width: 100dvw;
-  height: 100dvh;
-  object-fit: cover;
-  position: absolute;
-  z-index: -1;
-}
-
 main {
   display: flex;
   justify-content: center;

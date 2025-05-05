@@ -17,14 +17,14 @@ function toggleMenu() {
       <div class="logo">
         <template v-if="route.name === 'Home'">
           <img
-            src="../../public/assets/shared/logo.svg"
+            src="/assets/shared/logo.svg"
             alt="Space Tourism Website Logo"
           />
         </template>
         <template v-else>
           <router-link to="/" class="nav-link">
             <img
-              src="../../public/assets/shared/logo.svg"
+              src="/assets/shared/logo.svg"
               alt="Space Tourism Website Logo"
             />
           </router-link>
@@ -33,14 +33,14 @@ function toggleMenu() {
       </div>
       <div class="menu-icon" @click="toggleMenu">
         <img
-          src="../../public/assets/shared/icon-hamburger.svg"
+          src="/assets/shared/icon-hamburger.svg"
           alt="Menu Icon"
         />
       </div>
       <div class="pages" :class="{ 'menu-open': isMenuOpen }">
         <ul class="nav-links" :class="{ 'menu-open': isMenuOpen }">
           <img
-            src="../../public/assets/shared/icon-close.svg"
+            src="/assets/shared/icon-close.svg"
             alt="Close Icon"
             v-on:click="toggleMenu"
             class="close-icon"

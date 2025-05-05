@@ -13,25 +13,6 @@ function selectTech(index) {
 </script>
 
 <template>
-  <picture class="bg-image">
-    <source
-      media="(min-width: 1024px)"
-      srcset="../../public/assets/technology/background-technology-desktop.jpg"
-    />
-    <source
-      media="(max-width: 1024px)"
-      srcset="../../public/assets/technology/background-technology-tablet.jpg"
-    />
-    <source
-      media="(max-width: 767px)"
-      srcset="../../public/assets/technology/background-technology-mobile.jpg"
-    />
-    <img
-      src="../../public/assets/technology/background-technology-mobile.jpg"
-      class="bg-image"
-      alt="Background Image"
-    />
-  </picture>
   <main>
     <div class="tech-container">
       <p class="text-preset-5">
@@ -84,14 +65,6 @@ function selectTech(index) {
 </template>
 
 <style scoped>
-.bg-image {
-  width: 100dvw;
-  height: 100dvh;
-  object-fit: cover;
-  position: absolute;
-  z-index: -1;
-}
-
 main {
   display: flex;
   justify-content: center;
