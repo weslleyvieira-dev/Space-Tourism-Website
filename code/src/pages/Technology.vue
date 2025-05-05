@@ -139,7 +139,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  list-style: none;
 }
 
 .pagination-techs {
@@ -148,6 +147,7 @@ main {
   gap: 2rem;
   padding-left: 0;
   margin: 0;
+  list-style: none;
 }
 
 .pagination-options {
